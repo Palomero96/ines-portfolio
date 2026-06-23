@@ -37,6 +37,10 @@ body {
     color: #7ce0d3; /* Turquesa claro */
     font-size: 3.5rem;
     line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4.5rem;
 }
 
 .logo-text {
@@ -45,6 +49,7 @@ body {
     font-size: 4.5rem;
     font-weight: 500;
     letter-spacing: 2px;
+    margin: 0;
     
     /* Truco para el gradiente en el texto */
     background: linear-gradient(to bottom, #7de2d6, #3f9b9f);
@@ -73,6 +78,38 @@ body {
 
 .main-nav a:hover {
     color: #45aeb0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.star-decoration {
+    color: #7ce0d3; /* Turquesa claro */
+    font-size: 3.5rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4.5rem;
+}
+
+.logo-text {
+    /* Fuente redondeada y juguetona para el nombre */
+    font-family: 'Fredoka', sans-serif; 
+    font-size: 4.5rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin: 0;
+    
+    /* Truco para el gradiente en el texto */
+    background: linear-gradient(to bottom, #7de2d6, #3f9b9f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 /* El estilo de la pestaña actual (Gallery en este caso) */
