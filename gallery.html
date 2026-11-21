@@ -13,6 +13,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
         <link rel="stylesheet" href="css/styles.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -20,115 +21,32 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header" class="main-header">
-						<div class="inner">
+				<header id="header" class="main-header">
+					<div class="inner">
 
-							<!-- Logo -->
-								<div class="logo-container">
-                                    <span class="star-decoration">✴</span>
-                                    <h1 class="logo-text">Inés Palomero</h1>
-                                    <span class="star-decoration">✴</span>
-                                </div>
+						<!-- Logo -->
+						<a href="index.html" class="logo">
+							<img src="images/logo.png" alt="Inés Palomero" style="height: 10rem; width: auto;" />
+						</a>
 
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
+						<!-- Nav -->
+						<nav class="main-nav">
+							<ul>
+								<li><a href="index.html" >Personal Work</a></li>
+								<li><a href="gallery.html" class="active">Gallery</a></li>
+								<li><a href="commissions.html">Commissions</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</nav>
 
-						</div>
-					</header>
-
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Personal Work</a></li>
-							<li><a href="gallery.html">Gallery</a></li>
-							<li><a href="commissions.html">Commissions</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</nav>
-
+					</div>
+				</header>
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Gallery</h1>
-							<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
-							
-							<h2>Gallery Collection</h2>
-							<p>Welcome to my gallery. Here you'll find a curated selection of my artwork and creative projects. Each piece represents a moment in time and a unique artistic expression.</p>
-							
-							<section class="tiles">
-								<article class="style1">
-									<span class="image">
-										<img src="images/pic01.jpg" alt="" />
-									</span>
-									<a href="#">
-										<h3>Artwork One</h3>
-										<div class="content">
-											<p>A beautiful piece exploring color and form.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style2">
-									<span class="image">
-										<img src="images/pic02.jpg" alt="" />
-									</span>
-									<a href="#">
-										<h3>Artwork Two</h3>
-										<div class="content">
-											<p>Creative exploration in digital media.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style3">
-									<span class="image">
-										<img src="images/pic03.jpg" alt="" />
-									</span>
-									<a href="#">
-										<h3>Artwork Three</h3>
-										<div class="content">
-											<p>Contemporary artistic expression.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style4">
-									<span class="image">
-										<img src="images/pic04.jpg" alt="" />
-									</span>
-									<a href="#">
-										<h3>Artwork Four</h3>
-										<div class="content">
-											<p>Mixed media composition.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style5">
-									<span class="image">
-										<img src="images/pic05.jpg" alt="" />
-									</span>
-									<a href="#">
-										<h3>Artwork Five</h3>
-										<div class="content">
-											<p>Digital art piece.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style6">
-									<span class="image">
-										<img src="images/pic06.jpg" alt="" />
-									</span>
-									<a href="#">
-										<h3>Artwork Six</h3>
-										<div class="content">
-											<p>Artistic vision realized.</p>
-										</div>
-									</a>
-								</article>
-							</section>
+							<h2>☆ Gallery ☆</h2>
+							<section id="gallery-grid" class="gallery-grid"></section>
 						</div>
 					</div>
 
@@ -136,38 +54,15 @@
 					<footer id="footer">
 						<div class="inner">
 							<section>
-								<h2>Get in touch</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-										<div class="field half">
-											<input type="email" name="email" id="email" placeholder="Email" />
-										</div>
-										<div class="field">
-											<textarea name="message" id="message" placeholder="Message"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send" class="primary" /></li>
-									</ul>
-								</form>
-							</section>
-							<section>
-								<h2>Follow</h2>
+								
 								<ul class="icons">
-									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://www.instagram.com/ineespm" target="_blank" rel="noopener noreferrer" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://www.linkedin.com/in/inespalomeromendez/" target="_blank" rel="noopener noreferrer" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+									<li><a href="mailto:ineespm2@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
 							</section>
 							<ul class="copyright">
-								<li>&copy; Inés Palomero. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>© Inés Palomero. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
 					</footer>
@@ -180,6 +75,102 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<!-- Lightbox para ampliar imágenes -->
+			<div id="lightbox" class="lightbox">
+				<img id="lightbox-img" src="" alt="" />
+			</div>
+			<script>
+				const galleryTitles = [
+					"Titulo 1 PRuebas 2025.", "Artwork 2", "Artwork 3", "Artwork 4", "Artwork 5",
+					"Artwork 6", "Artwork 7", "Artwork 8", "Artwork 9", "Artwork 10",
+					"Artwork 11", "Artwork 12", "Artwork 13", "Artwork 14", "Artwork 15",
+					"Artwork 16", "Artwork 17", "Artwork 18", "Artwork 19", "Artwork 20",
+					"Artwork 21", "Artwork 22", "Artwork 23", "Artwork 24", "Artwork 25",
+					"Artwork 26", "Artwork 27", "Artwork 28", "Artwork 29", "Artwork 30"
+				];
+				const galleryYear = [
+					"2025", "Artwork 2", "Artwork 3", "Artwork 4", "Artwork 5",
+					"Artwork 6", "Artwork 7", "Artwork 8", "Artwork 9", "Artwork 10",
+					"Artwork 11", "Artwork 12", "Artwork 13", "Artwork 14", "Artwork 15",
+					"Artwork 16", "Artwork 17", "Artwork 18", "Artwork 19", "Artwork 20",
+					"Artwork 21", "Artwork 22", "Artwork 23", "Artwork 24", "Artwork 25",
+					"Artwork 26", "Artwork 27", "Artwork 28", "Artwork 29", "Artwork 30"
+				]
+				const galleryMaterial = [
+					"PINTURILLAS", "Artwork 2", "Artwork 3", "Artwork 4", "Artwork 5",
+					"Artwork 6", "Artwork 7", "Artwork 8", "Artwork 9", "Artwork 10",
+					"Artwork 11", "Artwork 12", "Artwork 13", "Artwork 14", "Artwork 15",
+					"Artwork 16", "Artwork 17", "Artwork 18", "Artwork 19", "Artwork 20",
+					"Artwork 21", "Artwork 22", "Artwork 23", "Artwork 24", "Artwork 25",
+					"Artwork 26", "Artwork 27", "Artwork 28", "Artwork 29", "Artwork 30"
+				]
 
+				const grid = document.getElementById("gallery-grid");
+	const lightbox = document.getElementById("lightbox");
+				const lightboxImg = document.getElementById("lightbox-img");
+
+				// Observador para animar cada cuadrado al entrar en pantalla
+				const observer = new IntersectionObserver((entries, obs) => {
+					entries.forEach((entry) => {
+						if (entry.isIntersecting) {
+							entry.target.classList.add("visible");
+							obs.unobserve(entry.target); // Solo se anima una vez
+						}
+					});
+				}, { threshold: 0.1 });
+
+				galleryTitles.forEach((title, index) => {
+					const num = index + 1;
+					const imgSrc = `images/gallery/galeria${num}.jpg`;
+					const material = galleryMaterial[index] || "";
+					const year = galleryYear[index] ? `(${galleryYear[index]})` : "";
+					const subtitle = `${material} ${year}`.trim();
+
+					const item = document.createElement("div");
+					item.className = "gallery-item";
+					// Pequeño retardo escalonado por columna (0s, 0.1s, 0.2s)
+					item.style.transitionDelay = `${(index % 3) * 0.1}s`;
+
+					item.innerHTML = `
+						<img src="${imgSrc}" alt="${title}" loading="lazy" />
+						<div class="gallery-overlay">
+							<h3>${title}</h3>
+							${subtitle ? `<p>${subtitle}</p>` : ""}
+						</div>
+					`;
+
+					// Efecto fade-in al terminar de cargar la imagen
+					const img = item.querySelector("img");
+					if (img.complete) {
+						img.classList.add("loaded");
+					} else {
+						img.addEventListener("load", () => img.classList.add("loaded"));
+					}
+
+					// Abrir imagen en grande al hacer clic
+					item.addEventListener("click", () => {
+						lightboxImg.src = imgSrc;
+						lightboxImg.alt = title;
+						lightbox.classList.add("active");
+					});
+
+					grid.appendChild(item);
+					observer.observe(item);
+				});
+
+				// Cerrar al hacer clic fuera de la imagen (o en el fondo oscuro)
+				lightbox.addEventListener("click", (e) => {
+					if (e.target === lightbox) {
+						lightbox.classList.remove("active");
+					}
+				});
+
+				// Cerrar con la tecla Escape
+				document.addEventListener("keydown", (e) => {
+					if (e.key === "Escape") {
+						lightbox.classList.remove("active");
+					}
+				});
+			</script>
 	</body>
 </html>

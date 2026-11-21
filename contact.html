@@ -13,6 +13,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
         <link rel="stylesheet" href="css/styles.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -20,120 +21,78 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header" class="main-header">
-						<div class="inner">
+				<header id="header" class="main-header">
+					<div class="inner">
 
-							<!-- Logo -->
-								<div class="logo-container">
-                                    <span class="star-decoration">✴</span>
-                                    <h1 class="logo-text">Inés Palomero</h1>
-                                    <span class="star-decoration">✴</span>
-                                </div>
+						<!-- Logo -->
+						<a href="index.html" class="logo">
+							<img src="images/logo.png" alt="Inés Palomero" style="height: 10rem; width: auto;" />
+						</a>
 
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
+						<!-- Nav -->
+						<nav class="main-nav">
+							<ul>
+								<li><a href="index.html" >Personal Work</a></li>
+								<li><a href="gallery.html">Gallery</a></li>
+								<li><a href="commissions.html">Commissions</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="contact.html" class="active">Contact</a></li>
+							</ul>
+						</nav>
 
-						</div>
-					</header>
-
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Personal Work</a></li>
-							<li><a href="gallery.html">Gallery</a></li>
-							<li><a href="commissions.html">Commissions</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</nav>
+					</div>
+				</header>
 
 				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<h1>Contact Me</h1>
-							<p>I'd love to hear from you! Whether you have questions about my work, are interested in a commission, or just want to say hello, feel free to reach out using the form below or through my social media channels.</p>
-							
-							<h2>Get in Touch</h2>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field half">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" placeholder="Your Name" />
-									</div>
-									<div class="field half">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" placeholder="your.email@example.com" />
-									</div>
-									<div class="field">
-										<label for="subject">Subject</label>
-										<input type="text" name="subject" id="subject" placeholder="What is this about?" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="5" placeholder="Your message here..."></textarea>
-									</div>
+				<div id="main" class="contact-main">
+					<section class="contact-section">
+						<div class="contact-card">
+							<h2>☆ Contact me ☆</h2>
+							<p class="contact-intro">
+								☆ We can work and make something beautiful together ☆<br />
+								Feel free to contact me out for any questions, ideas or projects<br />
+								and I'll attend to your email as soon as possible.
+							</p>
+
+							<form id="contact-form" action="https://formspree.io/f/mzeravgp" method="POST" class="custom-contact-form">
+								<!-- Campo anti-spam nativo de Formspree -->
+								<input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+								<div class="form-row">
+									<input type="text" name="first_name" placeholder="First Name" required />
+									<input type="text" name="last_name" placeholder="Last Name" required />
 								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" class="primary" /></li>
-									<li><input type="reset" value="Reset" /></li>
-								</ul>
+
+								<div class="form-group">
+									<input type="email" name="email" placeholder="Your email" required />
+								</div>
+
+								<div class="form-group">
+									<textarea name="message" rows="2" placeholder="Your message" required></textarea>
+								</div>
+
+								<div class="form-actions">
+									<button type="submit" class="btn-submit" id="submit-btn">Submit</button>
+									<p id="form-status" style="margin-top: 1em; font-size: 0.9em;"></p>
+								</div>
 							</form>
-							
-							<h2>Connect With Me</h2>
-							<p>You can also find me on social media. Follow for updates on new projects and behind-the-scenes content.</p>
-							<ul class="icons">
-								<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
-								<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
-								<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
-							</ul>
 						</div>
-					</div>
+					</section>
+				</div>
 
 				<!-- Footer -->
 					<footer id="footer">
 						<div class="inner">
 							<section>
-								<h2>Get in touch</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<input type="text" name="name" id="name2" placeholder="Name" />
-										</div>
-										<div class="field half">
-											<input type="email" name="email" id="email2" placeholder="Email" />
-										</div>
-										<div class="field">
-											<textarea name="message" id="message2" placeholder="Message"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send" class="primary" /></li>
-									</ul>
-								</form>
-							</section>
-							<section>
-								<h2>Follow</h2>
+								
 								<ul class="icons">
-									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://www.instagram.com/ineespm" target="_blank" rel="noopener noreferrer" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://www.linkedin.com/in/inespalomeromendez/" target="_blank" rel="noopener noreferrer" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+									<li><a href="mailto:ineespm2@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
 							</section>
 							<ul class="copyright">
-								<li>&copy; Inés Palomero. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>© Inés Palomero. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
 					</footer>
